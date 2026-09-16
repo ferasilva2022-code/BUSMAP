@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSMAP|LINHAS</title>
+    <link rel="stylesheet" href="./css/busmap_linha.css">
+</head>
+<body>
+    <header>
+        <nav id="navBar">
+            <ul>
+                <li><a href="">Usuário</a></li>
+                <li><a href="">Linhas</a></li>
+                <li><a href="">Itinerário</a></li>
+                <li><a href="">Ponto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form  id="formularioCadastroLinha">
+        <div class="campo">
+        <label for="nomeLinha">Nome da Linha</label>
+        <input type="text" id="nomeLinha" name="nomeLinha" placeholder="Ex: Atuba/Pinheirinho" required>
+        <span class="msg-erro" id="erro-nomeLinha"></span>
+        </div>
+
+        <div class="campo">
+        <label for="codigoLinha">Código da Linha</label>
+        <input type="text" id="codigoLinha" name="codigoLinha" placeholder="Ex: 350" required>
+        <span class="msg-erro" id="erro-codigoLinha"></span>
+        </div>
+
+        <label for="statusLinha">Status da Linha</label>
+        <div class="campo">
+            <input type="checkbox" id="statusLinha" name="statusLinha" checked>
+            <span id="labelStatus">Ativa</span>
+        </div>
+
+        <button type="submit" id="btnCadastrarLinha">Cadastrar</button>
+        <div id="alterar"></div>
+    </form>
+
+     <table id="containerCards">
+        <thead>
+        <tr>
+            <th>CÓDIGO</th>
+            <th>NOME</th>
+            <th>STATUS</th>
+            <th></th>
+        </tr>
+    </thead>
+        <tbody id="linhacards"></tbody>
+    </table>
+
+<script src="busmap_linha.js"></script>
+</body>
+</html>

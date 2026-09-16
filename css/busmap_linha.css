@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f9fa;
+    font-family: Arial, sans-serif; 
+}
+
+/* NAVBAR */
+#navBar {
+    background: #1f4e78;
+    color: white;
+    height: auto;
+    padding: 10px 0; /* Dá um respiro vertical no menu */
+}
+
+#navBar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    gap: 20px;
+}
+
+#navBar li a {
+    text-decoration: none;
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    transition: background 0.3s, color 0.3s; 
+}
+
+#navBar li a:hover {
+    background: white;
+    color: #1f4e78;
+}
+
+/* FORMULÁRIO DE CADASTRO */
+#formularioCadastroLinha {
+    display: flex;
+    flex-direction: column; 
+    align-items: stretch;   
+    max-width: 900px;       
+    margin: 30px auto; 
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+#formularioCadastroLinha input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    max-width: 900px;
+    transition: border-color 0.3s;
+}
+
+#formularioCadastroLinha input[type="text"]:focus {
+    border-color: #1f4e78;
+}
+
+/* BOTÃO */
+#formularioCadastroLinha button {
+    background: #1f4e78;
+    color: white;
+    border: 1px solid #1f4e78; 
+    padding: 12px; 
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#formularioCadastroLinha button:hover {
+    background: white;
+    color: #1f4e78;
+    border-color: #1f4e78;
+}
+
+
+.input-erro {
+    border-color: #dc3545 !important;
+}
+
+.msg-erro {
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: -8px; 
+}
+
+/* RESETS E ESTILO DA TABELA */
+#containerCards {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#containerCards thead {
+    background: #1f4e78;
+    color: white;
+}
+
+#containerCards th, 
+#containerCards td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#containerCards tr {
+    display: table-row !important; /* Desativa qualquer flexbox */
+}
+
+#containerCards td button {
+    background: #1f4e78;
+    color: white;
+    border: 1px solid #1f4e78;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+#containerCards td button:hover {
+    background: white;
+    color: #1f4e78;
+}
